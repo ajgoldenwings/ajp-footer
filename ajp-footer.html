@@ -1,0 +1,36 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<dom-module id="ajp-footer">
+  <template>
+    <style>
+      :host {
+        display: block;
+				left: 0;
+				right: 0;
+				padding: 1rem;
+ 				text-align: center;
+      }
+    </style>
+		<div>[[topText]]</div>
+		<div>[[bottomText]]</div>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'ajp-footer',
+
+      properties: {
+        bottomText: {
+          type: String,
+          value: 'AJP',
+        },
+        topText: {
+          type: String,
+          value: 'Powered By',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
